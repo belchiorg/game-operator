@@ -87,7 +87,7 @@ type GameStatus struct {
 type Game struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
-	Spec              GameSpec   `json:"spec,omitempty"`
+	Spec              GameSpec `json:"spec,omitempty"`
 	// +optional
 	Status GameStatus `json:"status,omitempty"`
 }
